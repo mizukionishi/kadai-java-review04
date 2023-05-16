@@ -31,7 +31,7 @@ public class Animal {
         this.age = age;
     }
 
-    public void say(Human human) {
+    public void say() {
         System.out.println(name + "です。" + age  + "です。");
     }
 

@@ -1,6 +1,14 @@
 package animal;
 
 public class Human extends Animal implements Thinkable {
+  //引数なしのコンストラクタ
+    public Human() {
+    }
+    //引数ありコンストラクタ
+    public Human(String name, int age, String hobby) {
+        super(name, age);
+        this.hobby = hobby;
+    }
 
     //趣味のフールド
     private String hobby;
@@ -16,18 +24,14 @@ public class Human extends Animal implements Thinkable {
     }
 
 
-    //引数なしのコンストラクタ
-    public Human() {
-    }
 
-    //引数ありコンストラクタ
-    public Human(String name, int age, String hobby) {
-        super(name, age);
-        this.hobby = hobby;
-    }
 
-    public void think(Human human) {
+
+
+    public void think() {
         System.out.println("私は" + this.hobby + "について考えています。");
     }
+
+
 
 }

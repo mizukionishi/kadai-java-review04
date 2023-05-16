@@ -7,14 +7,14 @@ public class Review04 {
         Human suzuki = new Human("鈴木　次郎", 30, "野球");
         Human sato = new Human("佐藤　花子", 20, "映画");
 
-        tanaka.say(tanaka);
-        tanaka.think(tanaka);
+        tanaka.say();
+        tanaka.think();
 
-        suzuki.say(suzuki);
-        suzuki.think(suzuki);
+        suzuki.say();
+        suzuki.think();
 
-        sato.say(sato);
-        sato.think(sato);
+        sato.say();
+        sato.think();
     }
 
 }
